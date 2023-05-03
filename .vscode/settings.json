@@ -1,0 +1,30 @@
+{
+  // Exclude stuff that shouldn't be touched.
+  "files.exclude": {
+    "**/node_modules": true,
+    ".pnp.*": true,
+    "yarn.lock": true
+  },
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true,
+    ".yarn": true
+  },
+  // Yarn SDKs
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.tsdk": ".yarn/sdks/typescript/lib",
+  "eslint.nodePath": ".yarn/sdks",
+  "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
+  // Linting and Formatting
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": true
+  },
+  // Spell Checking
+  "cSpell.enabled": true,
+  "cSpell.language": "en-US",
+  "cSpell.ignoreWords": ["tsbuildinfo", "yarnpkg"]
+}
